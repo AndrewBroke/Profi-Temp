@@ -8,6 +8,7 @@ TagManager:
   - Resource
   - PlayerUnit
   - Enemy
+  - Capital
   layers:
   - Default
   - TransparentFX

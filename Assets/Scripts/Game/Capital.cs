@@ -35,4 +35,10 @@ public class Capital : MonoBehaviour
     {
         
     }
+
+    private void OnDestroy()
+    {
+        // Когда объект уничтожается
+        // Появление окна проигрыша
+    }
 }
