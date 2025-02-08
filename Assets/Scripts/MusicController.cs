@@ -8,22 +8,22 @@ public class MusicController : MonoBehaviour
     public AudioMixer mixer;
 
     /// <summary>
-    /// Функция загружает значения настроек из сохранений
-    /// И ставит нужную громкость
+    /// Function loads values from PlayerPrefs
+    /// And sets it to the mixer
     /// </summary>
     public void LoadMusicSettings()
     {
-        // Загружаем сохранения
+        // Load values
         int volume = PlayerPrefs.GetInt("Volume", 0);
         int muted = PlayerPrefs.GetInt("Muted", 0);
 
-        // Ставим громкость
+        // Set volume
         mixer.SetFloat("MasterVolume", volume);
 
-        // Если mute, то громкость ставим в 0
+        // If muted == 1 then set volume to -80
         if(muted == 1)
         {
-            // Ставим значение
+            // Set volume to master in mixer
             mixer.SetFloat("MasterVolume", -80);
         }
     }
