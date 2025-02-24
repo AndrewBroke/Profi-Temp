@@ -7,13 +7,13 @@ public class ArcherController : MonoBehaviour
     public float attackDistance = 4;
     public GameObject currentTarget;
     Animator animator;
-    Unit unit;
+    MovableUnit unit;
     bool isAttacking = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        unit = GetComponent<Unit>();
+        unit = GetComponent<MovableUnit>();
         animator = GetComponent<Animator>();
     }
 

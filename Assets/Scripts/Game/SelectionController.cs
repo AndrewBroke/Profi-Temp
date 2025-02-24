@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class SelectionController : MonoBehaviour
 {
-    public Unit currentUnit;
+    public MovableUnit currentUnit;
 
     [Header("Villager")]
     // Данные про Villager

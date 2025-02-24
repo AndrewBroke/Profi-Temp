@@ -25,7 +25,7 @@ public class EnemyController : MonoBehaviour
             {
                 foreach (var enemy in enemies)
                 {
-                    Unit unit;
+                    MovableUnit unit;
                     if(enemy.TryGetComponent(out unit))
                     {
                         unit.Go(playerUnit.transform.position);
@@ -37,7 +37,7 @@ public class EnemyController : MonoBehaviour
             {
                 foreach (var enemy in enemies)
                 {
-                    Unit unit;
+                    MovableUnit unit;
                     if (enemy.TryGetComponent(out unit))
                     {
                         unit.Go(playerCapital.transform.position);
